@@ -8,7 +8,7 @@ all: build test lint
 
 .PHONE: configure
 configure:
-	go mod download
+	go mod download && go mod tidy
 
 .PHONY: build
 build:
